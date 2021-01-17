@@ -1,0 +1,26 @@
+{
+    "name": "esbuild-typescript-template",
+    "version": "1.0.0",
+    "author": "CitRUS",
+    "license": "MIT",
+    "scripts": {
+        "dev": "run-p validate:dev esbuild:dev",
+        "prod": "run-s validate:prod esbuild:prod",
+        "start": "node ./dist/app.js",
+        "validate:prod": "tsc --noEmit",
+        "validate:dev": "pnpm validate:prod -- --watch",
+        "esbuild:dev": "node ./esbuild/dev",
+        "esbuild:prod": "node ./esbuild/prod"
+    },
+    "devDependencies": {
+        "@types/fs-extra": "9.0.6",
+        "@types/node": "14.14.21",
+        "@types/node-fetch": "2.5.8",
+        "chokidar": "3.5.1",
+        "esbuild": "0.8.32",
+        "npm-run-all": "4.1.5",
+        "prettier": "2.2.1",
+        "source-map-support": "0.5.19",
+        "typescript": "4.1.3"
+    }
+}
