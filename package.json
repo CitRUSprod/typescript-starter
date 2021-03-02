@@ -1,16 +1,20 @@
 {
     "name": "esbuild-typescript-template",
-    "version": "1.0.0",
     "author": "CitRUS",
     "license": "MIT",
     "scripts": {
-        "dev": "run-p validate:dev esbuild:dev",
-        "prod": "run-s validate:prod esbuild:prod",
-        "start": "node ./dist/app.js",
-        "validate:prod": "tsc --noEmit",
-        "validate:dev": "pnpm validate:prod -- --watch",
-        "esbuild:dev": "node ./esbuild/dev",
-        "esbuild:prod": "node ./esbuild/prod"
+        "dev": "run-p dev:*",
+        "dev:validate": "pnpm validate -- --watch",
+        "dev:esbuild": "node ./esbuild/dev",
+        "build": "run-s build:*",
+        "build:validate": "pnpm validate",
+        "build:esbuild": "node ./esbuild/prod",
+        "start": "node ./dist/app",
+        "validate": "tsc --noEmit",
+        "prettier": "prettier --check",
+        "prettier:fix": "pnpm prettier -- --write",
+        "prettier:all": "pnpm prettier -- \"**/*.{md,json,yml,yaml,js,ts}\"",
+        "prettier:fix:all": "pnpm prettier:all -- --write"
     },
     "devDependencies": {
         "@types/fs-extra": "9.0.6",

@@ -5,7 +5,7 @@
 Create a new project based on this template using degit:
 
 ```sh
-npx degit CitRUSprod/esbuild-typescript-template my-app
+pnpx degit CitRUSprod/esbuild-typescript-template my-app
 cd my-app
 ```
 
@@ -19,6 +19,6 @@ pnpm start
 ### Production mode
 
 ```sh
-pnpm prod
+pnpm build
 pnpm start
 ```
