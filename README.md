@@ -13,7 +13,6 @@ cd my-app
 
 ```sh
 pnpm dev
-pnpm start
 ```
 
 ### Production mode
