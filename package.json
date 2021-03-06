@@ -17,9 +17,7 @@
         "prettier:fix:all": "pnpm prettier:all -- --write"
     },
     "devDependencies": {
-        "@types/fs-extra": "9.0.8",
         "@types/node": "14.14.31",
-        "@types/node-fetch": "2.5.8",
         "esbuild": "0.8.54",
         "nodemon": "2.0.7",
         "npm-run-all": "4.1.5",
