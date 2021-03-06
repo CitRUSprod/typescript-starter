@@ -1,7 +1,5 @@
 {
     "name": "esbuild-typescript-template",
-    "author": "CitRUS",
-    "license": "MIT",
     "scripts": {
         "dev": "run-p dev:*",
         "dev:nodemon": "nodemon -w ./src -e ts,json -x \"node ./esbuild/dev && pnpm start\"",
