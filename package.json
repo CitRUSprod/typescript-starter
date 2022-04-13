@@ -1,5 +1,6 @@
 {
     "name": "typescript-starter",
+    "private": true,
     "scripts": {
         "dev": "concurrently -k -n b,v -c blue,magenta -p [{name}] pnpm:dev:build pnpm:dev:validate",
         "dev:build": "node configs/esbuild/dev",
