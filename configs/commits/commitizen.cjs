@@ -1,4 +1,4 @@
-const { types } = require("./base")
+const { types } = require("./base.cjs")
 
 function convertCommitTypes(typesObject = {}) {
     const typeNames = Object.keys(typesObject)

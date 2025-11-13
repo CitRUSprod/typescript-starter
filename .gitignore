@@ -1,6 +1,8 @@
-.env
 .vscode
+
 *.log
-dist
-coverage
+
+.env
+
 node_modules
+dist

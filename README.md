@@ -36,25 +36,25 @@ pnpm commit
 Check types with `tsc`:
 
 ```sh
-pnpm validate
+pnpm check-types
 ```
 
-Test with `jest`:
-
-```sh
-pnpm test
-```
-
-Lint with `prettier` and `eslint`:
+Lint with linters:
 
 ```sh
 pnpm lint
 ```
 
-Format with `prettier` and `eslint`:
+Format with formatters:
 
 ```sh
 pnpm format
+```
+
+Validate types and lint code:
+
+```sh
+pnpm validate
 ```
 
 ### Environment variables
